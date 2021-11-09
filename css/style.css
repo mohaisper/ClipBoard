@@ -1,0 +1,321 @@
+/* Start Global Rules */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Bai Jamjuree', sans-serif;;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width:375px) {
+    .container{
+        width: 100%;
+    }
+}
+@media (max-width:1440px) {
+    .container{
+        width: 1390px;
+    }
+}
+:root{
+    --strong-cyan: hsl(210, 10%, 33%);
+    --light-blue:hsl(233, 100%, 69%);
+    --dark-grayish-blue:hsl(210, 10%, 33%) ;
+    --grayish-blue:hsl(201, 11%, 66%);
+    --font-size:18px;
+}
+/* End Global Rules */
+/* Start Header */
+header{
+    background-image: url(../images/bg-header-desktop.png),linear-gradient(0deg, rgba(255,255,255,0.5324511201839882) 21%, rgba(159,171,178,0.8125814133435973) 100%);
+    background-size: cover;
+    background-position: center center;
+    padding: 6em 0;
+}
+.container{
+    max-width: 80%;
+    margin: auto;
+}
+
+header img{
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+}
+/* End Header */
+/* Start Landing */
+.landing .container{
+    text-align: center;
+    margin-top: -30px;
+    padding-bottom: 50px;
+}
+.para h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+.para p{
+    color: #777;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 10px auto 20px;
+}
+.downloadone,
+.downloadtwo{
+    display: inline-block;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+}
+.downloadone{
+    background-color: hsl(171, 66% , 44%);
+    box-shadow: 0px 3px hsla(171, 64%, 33%, 0.789);
+    transition: .5s;
+}
+.downloadone:hover{
+    background-color: rgb(10, 153, 132);
+}
+.downloadtwo{
+    background-color: var(--light-blue);
+    box-shadow: 0px 3px hsla(233, 66%, 60%, 0.462);
+    transition: .5s;
+}
+.downloadtwo:hover{
+    background-color: hsl(233, 77%, 58%);
+}
+/* End Landing */
+/* Start Keep */
+.keep{
+    padding-top: 15px;
+    padding-bottom: 40px;
+}
+.keep .para{
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 50px;
+}
+.content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 40px;
+}
+.content .img-holder{
+    margin-right: 20px;
+} 
+.content .img-holder img{
+    transform: translateX(-200px);
+    overflow: hidden;
+}
+@media (max-width:767px) {
+    main .keep{
+        padding: 0;
+        display: block;
+        padding-right: 0;
+    }
+    .content .img-holder img{
+        max-width: 100%;
+    }
+    .content .img-holder{
+        max-width: 70%;
+        transform: translateX(-32px);
+    }
+    .keep .content .text{
+        padding: 0;
+        width: 50%;
+        align-items: center;
+    }
+    .keep .content .box{
+        padding: 0;
+        width: 50%;
+        margin: 0;
+    }
+    .keep .content .text .box {
+        display: grid;
+        place-items: center;
+        font-size: 15px;
+    }
+}
+.text{
+    padding: 40px;
+    transform: translateY(-30px);
+}
+.box{
+    margin: 10px auto;
+    align-items: center;
+    padding: 30px;
+}
+.box h3{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+.box p{
+    color: #777;
+    text-align: center;
+    line-height: 1.8;
+    font-weight: 400;
+}
+/* End Keep */
+/* Start Access */
+.accespara{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.access .image-holder img{
+    max-width: 100%;
+}
+/* End Access */
+/* Start Work Flow */
+.workflow{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.workflow .para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+.workflow .content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 70px;
+}
+.workflow .content .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.workflow .content .box img{
+    padding-bottom: 30px;
+}
+.workflow .content .box h3{
+    font-weight: normal;
+    font-size: 25px;
+    padding-bottom: 25px;
+    color: rgb(22, 21, 21);
+}
+/* End Work Flow */
+/* Start Icons */
+.icons{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.icons .imag-holder{
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width:767px) {
+    .icons .imag-holder{
+        flex-direction: column;
+        align-items: center;
+    }
+    .icons .imag-holder img{
+        width: 50%;
+        height: 50%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+.icons .imag-holder img{
+    max-width: 90%;
+    height: 90%;
+}
+/* End Icons */
+/* Start last */
+.last{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.last .para{
+    margin: 20px auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.last .para h3{
+    font-size: 35px;
+}
+.last .donwload{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+/* End Last */
+/* Start Footer */
+.footcontent {
+    background-color: rgba(224, 221, 221, 0.692);
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-left: 10xp;
+    padding-bottom: 40px;
+}
+@media (max-width:991px) {
+    footer{
+        display: none;
+    }
+}
+.footcontent .container{
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    place-items: center;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    padding-bottom: 10px;
+}
+.footcontent .container .logo{
+    margin-left: 50px;
+}
+.footcontent .container .logo img{
+    max-width: 40%;
+}
+.footcontent .container .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+}
+.footcontent .container .links a{
+    color:#777;
+    transition: .5s;
+}
+.footcontent .container .links a:hover{
+    color: rgb(61, 58, 58);
+}
+.footcontent .container .icon {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+}
+.footcontent .container .icon img{
+    margin-right: 10px;
+    cursor: pointer;
+}
+/* End Footer */
